@@ -1,13 +1,14 @@
  
     
-  #include<array>
+#include<array>
 #include<iostream>
 #include<ctime>
 #include<cstdlib>
+#include<complex.h>
 #include"./houjieSTL/s1/ass1.h"
-const int ASIZE= 1000000;
+const int ASIZE= 100000;
    using namespace std;
-
+#pragma region 
     void test_array()
     {
         array<long,ASIZE> c;
@@ -32,11 +33,19 @@ const int ASIZE= 1000000;
         
          cout<<"qsort+bsearch(),milli-seconds"<<clock()-time_start<<endl;
     }
- 
+    #pragma endregion
+ void complexTest()
+ {
+     complex<int>c1(12,45),c2(23,44);
+     c1+c2=complex<int>(2,3);
+     cout<<"c1="<<c1<<endl;
+     cout<<"c2="<<c2<<endl;
+ }
     int main()
     {
         
-        test_array();
+       // test_array();
+        complexTest();
         system("pause");
         return 0;
     }
