@@ -35,6 +35,7 @@ const int ASIZE= 1000000;
  
     int main()
     {
+        
         test_array();
         system("pause");
         return 0;
